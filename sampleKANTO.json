@@ -1,0 +1,28 @@
+{
+  "lines": {
+    "PL": [ "Indigo Plateau", "Victory Road", "Viridian City" ],
+    "V": [ "Pewter City", "Diglett's Cave (Pewter)", "Viridian Forest", "Viridian City",
+                  "Pallet Town" ],
+    "C": [ "Pewter City", "Mt. Moon", "Cerulean City", "Rock Tunnel", "Power Plant", "Lavender Town" ],
+    "S": [ "Bill's House", "Cerulean Cave", "Cerulean City", "Saffron City", "Vermillion City",
+           "Diglett's Cave (Vermillion)", "Snorlax Path" ],
+    "F": [ "Lavender Town", "Saffron City", "Celadon City", "Bike Path", "Safari Zone", "Fuchsia City", 
+           "Snorlax Path", "Lavender Town"],
+    "D": [ "Diglett's Cave (Vermillion)", "Diglett's Cave (Inner)", "Diglett's Cave (Pewter)"],
+    "I": [ "Fuchsia City", "Seafoam Islands", "Pokemon Mansion", "Cinnabar Island", "Pallet Town"]
+  },
+  "trips": {
+    "Brock": ["Pallet Town", "Pewter City"],
+    "Misty" : ["Viridian City", "Pewter City", "Cerulean City" ],
+    "Surge" : ["Pallet Town", "Pewter City", "Cerulean City", "Vermillion City"],
+    "Erika" : ["Pallet Town", "Pewter City", "Cerulean City", "Saffron City", "Celadon City"],
+    "Koga" : ["Pallet Town", "Pewter City", "Cerulean City", "Snorlax Path", "Fuchsia City"],
+    "Sabrina" : ["Pallet Town", "Pewter City", "Cerulean City", "Saffron City"],
+    "Blaine" : [ "Pallet Town", "Cinnabar Island" ],
+    "Giovanni" : [ "Pallet Town", "Viridian City" ],
+    "Diglett" : [ "Rock Tunnel", "Pewter City", "Diglett's Cave (Pewter)", "Diglett's Cave (Vermillion)" ],
+    "Ash": [ "Pallet Town", "Pewter City", "Cerulean City", "Vermillion City", "Snorlax Path", 
+              "Celadon City", "Fuchsia City", "Snorlax Path", "Saffron City", "Fuchsia City",
+              "Cinnabar Island", "Pallet Town", "Viridian City", "Indigo Plateau" ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "lines": {
+    "B": [ "New Bark Town", "Route 29", "Cherrygrove City", "Route 30", 
+           "Dark Cave C", "Route 31", "Sprout Tower", "Violet City" ],
+    "G": [ "Violet City", "Ruins of Alph", "Route 32", "Route 33", 
+           "Azalea Town", "Slowpoke Well", "Ilex Forest", "Route 34", 
+           "Goldenrod City", "Route 35", "National Park", "Route 36", "Violet City" ],
+    "E": [ "Goldenrod City", "Route 35", "Route 36", "Route 37", 
+           "Burned Tower", "Tin Tower", "Ecruteak City" ],
+    "O": [ "Ecruteak City", "Route 38", "Route 39", "Olivine City", 
+           "Route 40", "Route 41", "Whirl Islands", "Cianwood City", 
+           "Route 47", "Route 48", "Safari Zone" ],
+    "R": [ "Ecruteak City", "Mt. Mortar", "Route 42", "Mahogany Town", 
+           "Route 43", "Lake of Rage", "Route 44", "Ice Path", "Blackthorn City"],
+    "Z": [ "Blackthorn City", "Dark Cave B", "Route 45", "Dark Cave A", 
+           "Route 46", "Route 29", "New Bark Town" ],
+    "S": [ "New Bark Town", "Route 26", "Route 27", "Route 28", "Silver Cave"]
+  },
+  "trips": {
+    "Falkner" : [ "New Bark Town", "Violet City" ],
+    "Bugsy" : [ "New Bark Town", "Violet City", "Azalea Town" ],
+    "Whitney" : [ "New Bark Town", "Violet City", "Goldenrod City" ],
+    "Morty" : [ "New Bark Town", "Violet City", "Route 36", "Ecruteak City" ],
+    "Chuck" : [ "New Bark Town", "Violet City", "Route 35", "Ecruteak City", "Cianwood City" ],
+    "Jasmine": [ "New Bark Town", "Violet City", "Goldenrod City", "Ecruteak City", "Olivine City" ],
+    "Pryce": [ "New Bark Town", "Violet City", "Goldenrod City", "Ecruteak City", "Mahogany Town" ],
+    "Clair": [ "New Bark Town", "Blackthorn City" ],
+    "Gold": [ "New Bark Town", "Violet City", "Azalea Town", "Goldenrod City", 
+              "Ecruteak City", "Cianwood City", "Olivine City", "Ecruteak City", 
+              "Mahogany Town", "Blackthorn City", "New Bark Town", "Silver Cave"]
+  }
+}

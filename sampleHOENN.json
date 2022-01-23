@@ -1,0 +1,43 @@
+{
+  "lines": {
+    "L": [ "Littleroot Town", "Route 101", "Oldale Town", "Route 102", "Petalburg City", 
+           "Route 104 South", "Petalburg Woods", "Route 104 North", "Rustboro City" ],
+    "D": [ "Route 104 South", "Route 105", "Island Cave", "Granite Cave", "Route 106", 
+           "Dewford Town", "Route 107", "Sea Mauville", "Route 108", "Route 109", "Slateport City" ],
+    "O": [ "Oldale Town", "Route 103", "Slateport City" ],
+    "M": [ "Slateport City", "Route 110", "New Mauville", "Mauville City", 
+           "Route 111", "Desert Ruins", "Route 113", "Fallarbor Town" ],
+    "G": [ "Route 113", "Mt. Chimney", "Japped Pass", "Fiery Path", "Route 112", "Lavaridge Town"],
+    "V": [ "Fallarbor Town", "Route 114", "Meteor Falls", "Route 115",  "Rustboro City", "Route 116", 
+           "Rusturf Tunnel", "Verdanturf Town", "Route 117",  "Mauville City" ],
+    "F": [ "Mauville City", "Route 118", "Route 119", "Weather Station", "Fortree City",
+           "Ancient Tomb", "Scorched Slab", "Route 120", "Safari Zone", "Route 121", "Lilycove City" ],
+    "P": [ "Lilycove City", "Route 121", "Safari Zone", "Route 122", "Mt. Pyre", "Route 123",
+           "Route 118 (Back)", "Mauville City" ],
+    "S": [ "Lilycove City", "Route 124", "Route 125", "Shoal Cave", "Mossdeep City", 
+           "Nameless Cavern", "Route 127", "Route 126", "Cave of Origin", "Sootopolis City" ],
+    "E": [ "Mossdeep City", "Route 127", "Seafloor Cavern", "Route 128", "Ever Grande City", 
+           "Victory Road", "Pokemon League" ],
+    "C": [ "Sootopolis City", "Route 126", "Route 129", "Route 130", "Route 131", 
+           "Pacifidolog Town", "Route 132", "Route 133", "Route 134", "Slateport City" ]
+  },
+  "trips": { 
+    "Roxanne": [ "Littleroot Town", "Rustboro City"],
+    "Brawly": [ "Littleroot Town", "Route 104 South", "Dewford Town" ],
+    "Wattson": [ "Littleroot Town", "Oldale Town", "Slateport City", "Mauville City" ],
+    "Flannery": [ "Littleroot Town", "Route 104 South", "Slateport City", "Route 113", "Lavaridge Town" ],
+    "Norman": [ "Littleroot Town", "Pedalburg City" ],
+    "Winona": [ "Littleroot Town", "Oldale Town", "Slateport City", "Mauville City", "Fortree City"],
+    "Tate and Liza": [ "Littleroot Town", "Oldale Town", "Slateport City", "Mauville City", "Lilycove City", 
+                       "Mossdeep City" ],
+    "Wallace": [ "Littleroot Town", "Oldale Town", "Slateport City", "Mauville City", "Lilycove City", 
+                 "Mossdeep City", "Sootopolis City" ],
+    "Steven": [ "Littleroot Town", "Oldale Town", "Slateport City", "Mauville City", "Lilycove City", 
+                "Mossdeep City", "Ever Grande City"],
+    "Brendan": [ "Littleroot Town", "Rustboro City", "Route 104 South", "Dewford Town", "Slateport City", 
+                 "Mauville City", "Route 113", "Lavaridge Town", "Route 113", "Slateport City", "Oldale Town", 
+                 "Petalburg City", "Oldale Town", "Slateport City", "Mauville City", "Fortree City", "Lilycove City",
+                 "Mossdeep City", "Sootopolis City", "Mossdeep City", "Pokemon League"],
+    "May": [ "Littleroot Town", "Oldale Town", "Slateport City", "Mauville City", "Lilycove City"]
+  }
+}

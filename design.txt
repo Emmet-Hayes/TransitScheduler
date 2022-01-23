@@ -1,0 +1,10 @@
+Following the Project 5 spec, I implemented two classes for handling Passengers on separate threads, and Trains on separate threads.
+
+I am using a large class called MBTAGlobalCache to store state information within and across threads.
+
+In run_sim, I'm building starting a separate thread for each passenger by using the PassengerBuffer class and setting the run method to sleep for 0.5 seconds. Later in run_sum, I'm checking to see if the passenger is at the station they should board or deboard at to complete their trip.
+
+I implemented runnable in the TrainBuffer class, so that I can make some checks about what stations each train is going to next, and throw an interruptedException if more than one train tries to go to the same station. I also added a boolean in the Station class `isOccupied` (which can only be accurately observed if you use a lock), so if a train tries to move to a station that was (and possible is still) occupied recently by another train, then we will wait until we are signaled by another thread so that we can continue.
+
+
+The last few most recent version of my project have been failing many of the autograder tests, despite having no major problems locally, and it has been pretty sad to see. That said, I appreciated working on this challenging project, and I learned so much about concurrency and how it affects coming up with solutions in software.
