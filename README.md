@@ -43,9 +43,9 @@ Each line will spawn a train and each trip will spawn a passenger. Each train wi
 
 # Important Notes
 
-It is important to note that due to the concurrent nature of the underlying algorithm, any specific order of train movement is not guaranteed, and that trains will always attempt to move as quickly as possible.
+Any specific order of train movement is not guaranteed, and its important to remember that trains will always attempt to move as quickly as possible.
 
-Due to the nature of this logic, it is recommended that users do not supply data that has impossible deadlocking scenarios, such as two trains that share the same next station but could end up going in opposite directions. That can cause both trains to block each other, with no possibility of either one ever moving forward!
+It is recommended that users do not supply data that has impossible deadlocking scenarios, such as two trains that share the same next station but could end up going in opposite directions. That can cause both trains to block each other, with no possibility of either one ever moving forward!
 see this example:
 
 ```
