@@ -3,7 +3,7 @@ This project is a command line tool that can read .json data formulated for trac
 
 You will need the java SDK to run this. Once that's done...
 
-# HOW TO RUN
+# How to Run
 Run this project with:
     `./sim <json file> <tickDuration> <numMaxIterations>`
 
@@ -11,7 +11,7 @@ Run this project with:
 Recompile this project with:
   `javac -cp "gson-2.8.9.jar:junit-4.13.2.jar" BoardEvent.java DeboardEvent.java Entity.java Event.java Log.java Transit.java TransitGlobalCache.java TransitScheduler.java MoveEvent.java Passenger.java PassengerBuffer.java Sim.java Station.java Tests.java Train.java TrainBuffer.java Verify.java LogJson.java`
   
-# HOW TO CREATE JSON FILES FOR THIS PROJECT
+# How to Create Valid Json Data for this Project
 This system is expecting a .json file with `lines` and `trips` provided. each line consists of one train moving to each stations, and each trip consists of one passenger boarding and deboarding trains that go to the next station on their trip.
 
 The data formatting expected for the program aligns with typical json syntax.
@@ -41,7 +41,9 @@ Please format the data like so:
 
 Each line will spawn a train and each trip will spawn a passenger. Each train will move to the next station, unless the next station is already occupied. Each passenger will wait at their starting station for a train that travels to their next destination, and board that train until their stop.
 
-It is important to note that the any specific order of train movement is not guaranteed, and that trains will 
+# Important Notes
+
+It is important to note that due to the concurrent nature of the underlying algorithm, any specific order of train movement is not guaranteed, and that trains will always attempt to move as quickly as possible.
 
 Due to the nature of this logic, it is recommended that users do not supply data that has impossible deadlocking scenarios, such as two trains that share the same next station but could end up going in opposite directions. That can cause both trains to block each other, with no possibility of either one ever moving forward!
 see this example:
