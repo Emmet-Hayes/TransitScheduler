@@ -4,8 +4,15 @@ This project is a command line tool that can read .json data formulated for trac
 You will need the java SDK to run this. Once that's done...
 
 # How to Run
+
 Run this project with:
     `./sim <json file> <tickDuration> <numMaxIterations>`
+
+All arguments are optional:
+`<json file>` defaults to sampleBOS.json,
+`<tickDuration>` defaults to 500 ms,
+and `<numMaxIterations>` defaults to 200.
+
 
 
 Recompile this project with:
