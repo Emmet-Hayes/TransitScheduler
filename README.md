@@ -17,7 +17,8 @@ This system is expecting a .json file with `lines` and `trips` provided. each li
 The data formatting expected for the program aligns with typical json syntax.
 Please format the data like so:
 
-`{
+```
+{
   "lines": {
     "red": [ "Davis", "Harvard", "Kendall", "Park", "Downtown Crossing",
              "South Station", "Broadway", "Andrew", "JFK" ],
@@ -35,7 +36,8 @@ Please format the data like so:
   	"Emmet": [ "Copley", "Government Center", "Airport" ],
     "Sally": [ "Airport", "Government Center", "North Station", "Downtown Crossing", "Davis" ]
   }
-}`
+}
+```
 
 Each line will spawn a train and each trip will spawn a passenger. Each train will move to the next station, unless the next station is already occupied. Each passenger will wait at their starting station for a train that travels to their next destination, and board that train until their stop.
 
@@ -44,7 +46,8 @@ It is important to note that the any specific order of train movement is not gua
 Due to the nature of this logic, it is recommended that users do not supply data that has impossible deadlocking scenarios, such as two trains that share the same next station but could end up going in opposite directions. That can cause both trains to block each other, with no possibility of either one ever moving forward!
 see this example:
 
-`{
+```
+{
   "lines": {
     "red": [ "west", "central", "east"],
     "green": [ "east", "central", "west"]
@@ -52,7 +55,8 @@ see this example:
   "trips": {
     "Adam": ["west", "northeast"]
   }
-}`
+}
+```
 
 for the first iteration, we can imagine that either the `red` or `green` line will go first, occupying the `central` station. Then what?
 If `red` goes first to `central`, 
