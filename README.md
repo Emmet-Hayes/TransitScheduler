@@ -21,7 +21,7 @@ Please format the data like so:
 {
   "lines": {
     "red": [ "Davis", "Harvard", "Kendall", "Park", "Downtown Crossing",
-             "South Station", "Broadway", "Andrew", "JFK" ],
+      "South Station", "Broadway", "Andrew", "JFK" ],
     "orange": [ "Ruggles", "Back Bay", "Tufts Medical Center", "Chinatown",
       "Downtown Crossing", "State", "North Station",  "Sullivan" ],
     "green": [ "Tufts", "East Sommerville", "Lechmere", "North Station",
@@ -33,7 +33,7 @@ Please format the data like so:
     "Bob": [ "Park", "Tufts" ],
     "Alice": [ "Davis", "Kendall" ],
     "Carol": [ "Maverick", "Government Center", "Tufts" ],
-  	"Emmet": [ "Copley", "Government Center", "Airport" ],
+    "Emmet": [ "Copley", "Government Center", "Airport" ],
     "Sally": [ "Airport", "Government Center", "North Station", "Downtown Crossing", "Davis" ]
   }
 }
