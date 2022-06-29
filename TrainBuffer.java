@@ -37,10 +37,13 @@ public class TrainBuffer implements Runnable
 		{
 			hasLock = l.tryLock();
 			TransitGlobalCache.stationToIsOccupied.put(s1, true);
+
 			// throw exception if another train already posted the current destination for this train
 			if (TransitGlobalCache.currentDestinationMap.get(s2.toString()) != null) 
 				throw new InterruptedException();
+			
 			TransitGlobalCache.currentDestinationMap.put(s2.toString(), 1);
+
 			// start up trains from the station if they were left over
 			if (TransitGlobalCache.leftoverTrainCache.get(t) != null) 
 			{
@@ -56,7 +59,6 @@ public class TrainBuffer implements Runnable
 				Station cachedNext = TransitGlobalCache.leftoverTrainCache.get(t).get(1);
 				while (TransitGlobalCache.stationToIsOccupied.get(cachedNext)) 
 				{   //wait only once here if the first station is occupied, give threads time to let them notify us
-					System.out.println("Locked here cached occupate");
 					c.await((int)(TransitGlobalCache.tickDuration * 1.5) , TimeUnit.MILLISECONDS);
 					boolean breakGridLock = false;
 					try 
@@ -98,8 +100,6 @@ public class TrainBuffer implements Runnable
 				}
 				for (int i = 0; TransitGlobalCache.stationToIsOccupied.get(s2); ++i) 
 				{   
-					System.out.println("Locked here occupate.");
-					System.out.println("T: " + t.toString() + "\nS: " + s1.toString() + "\nS2: " + s2.toString());
 					c.await((int)(TransitGlobalCache.tickDuration * 1.5) , TimeUnit.MILLISECONDS);
 					if (i > TransitGlobalCache.maxWaits) throw new InterruptedException();
 				}
@@ -142,7 +142,7 @@ public class TrainBuffer implements Runnable
 		} 
 		finally 
 		{
-			if (hasLock) //tryLock only unlocks if the lock was actually acquired
+			if (hasLock) //only unlocks if the lock was actually acquired.
 			{ 
 				l.unlock();
 			}

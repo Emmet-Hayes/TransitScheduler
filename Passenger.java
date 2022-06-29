@@ -4,6 +4,7 @@ public class Passenger extends Entity
 
     public static Passenger make(String name) 
     {
+    	// If the passenger already exists in the cache, just return the existing passenger.
 	    if (TransitGlobalCache.passengerCache.containsKey(name))
 		    return TransitGlobalCache.passengerCache.get(name);
 

@@ -23,14 +23,14 @@ public class PassengerBuffer implements Runnable
 	@Override
 	public void run() {
 		Boolean hasLock = false;
-		try
+		/*try
 		{
 			hasLock = l.tryLock();
-			Station next = passengerIntermediateEndStationCache.get(p);
-			Station end = passengerEndStationCache.get(p);
+			//Station next = passengerIntermediateEndStationCache.get(p);
+			//Station end = passengerEndStationCache.get(p);
 		} catch (InterruptedException e) {
 		} finally {
 			if (hasLock) l.unlock();
-		}
+		} */
 	}
 }

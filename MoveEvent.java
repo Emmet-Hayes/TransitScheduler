@@ -24,6 +24,7 @@ public class MoveEvent implements Event
     public String toString() { return "Train " + t + " moves from " + s1 + " to " + s2; }
   
     public List<String> toStringList() { return List.of(t.toString(), s1.toString(), s2.toString()); }
+    
     public void replayAndCheck(Transit mbta) 
     {
 	    if (!mbta.stations.contains(s1)) 
@@ -59,12 +60,12 @@ public class MoveEvent implements Event
         }
 	    if (!foundStation1OnLine) 
 	    {
-		    System.out.println("Coudln't find the current station on the line.");
+		    System.out.println("Couldn't find the current station on the line.");
 		    throw new IllegalStateException();
 	    }
 	    if (!foundStation1OnLine) 
 	    {
-		    System.out.println("Coudln't find the next station on the line.");
+		    System.out.println("Couldn't find the next station on the line.");
 		    throw new IllegalStateException();
 	    }
 	  

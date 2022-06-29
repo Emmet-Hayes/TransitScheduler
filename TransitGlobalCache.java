@@ -32,6 +32,7 @@ public class TransitGlobalCache
 	public static Map<Station, Boolean> stationToIsOccupied = new HashMap<>();
 	public static Map<String, List<String>> stationHoldsTrains = new HashMap<>();
 	public static Map<String, Station> stationCache = new HashMap<>();
+	
 	public static int maxWaits = 5;
 	public static int tickDuration = 500;
 	public static int numIterations = 200;
